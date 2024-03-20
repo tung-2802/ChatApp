@@ -11,7 +11,7 @@ const createMessage = async (req, res) => {
 
   try {
     const response = await message.save();
-    res.status(500).json(response);
+    res.status(200).json(response);
   } catch (error) {
     console.log(error);
     res.status(500).json(error);
